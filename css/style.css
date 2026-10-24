@@ -369,3 +369,6 @@ button,input,select,textarea{font:inherit;color:inherit}
   .foot{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
 }
 .foot .todo{background:none;color:var(--sun)!important;outline-color:var(--sun)}
+
+/* строка автора сайта — тонко и приглушённо */
+.foot .foot__dev{margin-top:14px;font-size:12px;letter-spacing:.02em;color:#8f8a7a}
