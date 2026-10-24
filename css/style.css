@@ -342,6 +342,15 @@ button,input,select,textarea{font:inherit;color:inherit}
   .item__price{font-size:20px}
   .item .btn{font-size:11px;padding:12px 8px;white-space:normal;text-align:center}
   .hero__promo span{font-size:14px}
+  /* узкий телефон: колонки не растягиваются по самому длинному содержимому */
+  .hero__grid,.promo__in{grid-template-columns:minmax(0,1fr)}
+  .hero h1{font-size:clamp(26px,9.2vw,40px)}
+  .hero__promo{gap:10px;padding:8px 10px 8px 8px}
+  .hero__promo b{font-size:16px;padding:8px 9px 7px}
+  .hero__promo span{font-size:13px;min-width:0}
+  .coupon{padding:22px 18px}
+  .coupon__code{font-size:clamp(44px,15vw,64px);-webkit-text-stroke-width:2px;text-shadow:5px 5px 0 var(--ink)}
+  .coupon .btn{white-space:normal;text-align:center;justify-content:center;width:100%}
   .prices__box li{flex-direction:column;gap:2px}
   .coupon{outline-offset:5px}
   .dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--sun);border-top:var(--line) solid var(--ink)}
