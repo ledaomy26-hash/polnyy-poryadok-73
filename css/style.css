@@ -198,7 +198,9 @@ button,input,select,textarea{font:inherit;color:inherit}
 .chip{max-width:100%}
 .chip span{white-space:normal;overflow-wrap:anywhere}
 .coupon,.hero__promo,.bubble{max-width:100%}
-.coupon__code,.coupon__deal,.hero__promo span,.hero h1 .mark{overflow-wrap:anywhere}
+.coupon__code,.coupon__deal,.hero__promo span{overflow-wrap:anywhere}
+/* «ХИМЧИСТКУ» всегда одной строкой: не влезает — скрипт уменьшает шрифт заголовка */
+.hero h1 .mark{white-space:nowrap;overflow-wrap:normal}
 .promo__art img{width:100%;aspect-ratio:445/667;object-fit:cover}
 
 /* цены */

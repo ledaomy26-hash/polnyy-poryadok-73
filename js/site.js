@@ -16,6 +16,19 @@
     items.forEach(function (el) { el.classList.add("on"); });
   }
 
+  // заголовок: слово в рамке («ХИМЧИСТКУ») не переносится — если не влезает в облачко, уменьшаем шрифт заголовка
+  var h1 = document.querySelector(".hero h1");
+  var mark = h1 && h1.querySelector(".mark");
+  var fit = function () {
+    if (!mark) return;
+    h1.style.fontSize = "";
+    var fs = parseFloat(getComputedStyle(h1).fontSize);
+    while (mark.offsetWidth > h1.clientWidth && fs > 16) { fs -= 1; h1.style.fontSize = fs + "px"; }
+  };
+  fit();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  window.addEventListener("resize", fit);
+
   // фото работ: нажатие открывает снимок крупно; без <dialog> — просто в новой вкладке
   var box = document.querySelector("[data-zoom-box]");
   var boxImg = document.querySelector("[data-zoom-img]");
