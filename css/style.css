@@ -191,6 +191,14 @@ button,input,select,textarea{font:inherit;color:inherit}
 .coupon__deal b{background:var(--ink);color:var(--sun);padding:2px 10px;margin-right:4px}
 .coupon__how{margin:16px 0 24px;color:var(--ink-soft);max-width:44ch}
 .promo__art{justify-self:center;width:min(100%,360px)}
+/* при любом шрифте телефона блоки не шире колонки: длинное переносится, а не растягивает */
+.hero__grid > *,.promo__in > *,.order > *,.works > *,.rent > *,.prices > *{min-width:0}
+.work--next .btn,.coupon .btn{white-space:normal;text-align:center}
+.form,.form > *,.chips{min-width:0;max-width:100%}
+.chip{max-width:100%}
+.chip span{white-space:normal;overflow-wrap:anywhere}
+.coupon,.hero__promo,.bubble{max-width:100%}
+.coupon__code,.coupon__deal,.hero__promo span,.hero h1 .mark{overflow-wrap:anywhere}
 .promo__art img{width:100%;aspect-ratio:445/667;object-fit:cover}
 
 /* цены */
