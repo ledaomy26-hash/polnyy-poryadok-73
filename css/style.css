@@ -372,3 +372,5 @@ button,input,select,textarea{font:inherit;color:inherit}
 
 /* строка автора сайта — тонко и приглушённо */
 .foot .foot__dev{margin-top:14px;font-size:12px;letter-spacing:.02em;color:#8f8a7a}
+.foot .foot__dev a{color:#a9a392;font-weight:400!important;text-decoration:none;border-bottom:1px solid rgba(169,163,146,.4)}
+.foot .foot__dev a:hover{color:var(--sun)}
